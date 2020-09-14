@@ -105,7 +105,7 @@ public class Airplane : MonoBehaviour
 
         this.lWingFlap.transform.localRotation = Quaternion.Euler(-roll * 80.0f, lWingFlapRotation.y, lWingFlapRotation.z);
         this.rWingFlap.transform.localRotation = Quaternion.Euler(roll * 80.0f, rWingFlapRotation.y, rWingFlapRotation.z);
-        this.tailFlap.transform.localRotation = Quaternion.Euler(tailFlapRotation.x, yaw * 80.0f, tailFlapRotation.z);
+        this.tailFlap.transform.localRotation = Quaternion.Euler(tailFlapRotation.x, -yaw * 80.0f, tailFlapRotation.z);
 
         //Adujst actual rotations for speed and time
         pitch *= this.rotationSpeed * Time.deltaTime;
