@@ -9,7 +9,6 @@ public class PlayerAirplaneController : BaseAirplaneController
 
     #endregion Fields & Properties
 
-    // Update is called once per frame
     void Update()
     {
         float pitch = Input.GetAxis("Vertical");

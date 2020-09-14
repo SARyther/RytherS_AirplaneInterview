@@ -16,7 +16,6 @@ public class AIAirplaneController : BaseAirplaneController
 
     #endregion Fields & Properties
 
-    // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
@@ -32,7 +31,6 @@ public class AIAirplaneController : BaseAirplaneController
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if ((this.transform.position - this.targetPlane.transform.position).magnitude > this.followDistance)

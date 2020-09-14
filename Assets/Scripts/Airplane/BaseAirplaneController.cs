@@ -5,7 +5,7 @@ public class BaseAirplaneController : MonoBehaviour
 {
     #region Fields & Properties
 
-    protected Airplane airplane;
+    protected Airplane airplane = null;
 
     #endregion Fields & Properties
 

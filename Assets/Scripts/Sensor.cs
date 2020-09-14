@@ -8,14 +8,12 @@ public class Sensor : MonoBehaviour
 
     [SerializeField]
     private float senseDistance = 20.0f;
-    [SerializeField]
-    private LayerMask layerMask = 0;
 
     #endregion Fields & Properties
 
     public bool Query(out float obstacleDistance)
     {
-        bool obstaclePresent = Physics.Raycast(this.transform.position, this.transform.forward, out RaycastHit hitInfo, senseDistance, layerMask);
+        bool obstaclePresent = Physics.Raycast(this.transform.position, this.transform.forward, out RaycastHit hitInfo, senseDistance);
         obstacleDistance = -1.0f;
 
         if (obstaclePresent)
